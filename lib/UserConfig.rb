@@ -5,6 +5,7 @@ YAML_PATH = "./config/config.yaml"
 class UserConfig
   def initialize()
     @@data_path = YAML_PATH
+    load_data
   end
 
   def load_data()
