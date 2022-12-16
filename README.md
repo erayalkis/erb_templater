@@ -9,12 +9,12 @@ The app will step through each template in `/templates`, and generate a file usi
 
 **I wanna read!:**
 ## 1. Config
-First, you can check out the [user config file]("./config/user_config.yml").
+First, you can check out the [user config file]("/config/user_config.yml").
 
 Here, you can input your data to easily use them in your templates.
 I've added some dummy data so you can easily mess around with the examples, feel free to remove/change this dummy data as needed.
 
-You'll notice that there's also a [regular config file]("./config/confi.yml") in this directory.
+You'll notice that there's also a [regular config file]("/config/confi.yml") in this directory.
 This file is for configuring the behaviour of the app, though currently it only lets you specifically select
 
 -----
@@ -22,7 +22,7 @@ This file is for configuring the behaviour of the app, though currently it only 
 ## 2. Templates
 *(In the templates folder, you can find an example template which uses the dummy config, though you can add a additional templates of your own here*)
 
-In each template, the data you provided in the [user config file]("./config/user_config.yml") will be available as an instance variable.
+In each template, the data you provided in the [user config file]("/config/user_config.yml") will be available as an instance variable.
 Meaning, if you have a config like this:
 ```yaml
   user:
