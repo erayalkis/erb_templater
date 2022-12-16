@@ -1,8 +1,8 @@
 user:
-  name: "Eray Alkış"
-  role: "Full-Stack Software Developer"
+  name: "Test Name"
+  role: "Professional Placeholder"
   personal:
-    number: 332594988
+    number: 111-PLACEHOLDER-222
 company:
-  name: "Company LTD."
-  role: "Backend Engineer"
+  name: "Placeholder Enterprises LTD."
+  role: "Another Placeholder Guy"
