@@ -1,0 +1,3 @@
+
+class UserConfig
+end
