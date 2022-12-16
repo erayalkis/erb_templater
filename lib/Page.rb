@@ -10,6 +10,7 @@ class Page
     @@path_without_ext = "./templates/#{@@file_name}"
     confirm_file_exists
     get_file_paths
+
     @templates = load_files
   end
 
@@ -45,7 +46,7 @@ class Page
     paths = get_full_paths
 
     filename_has_match = paths.any? { |path| File.exist?(path) }
-    raise "File does not exists" unless filename_has_match
+    raise "File does not exist" unless filename_has_match
   end
 
   def get_file_paths
