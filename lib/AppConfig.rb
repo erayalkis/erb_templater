@@ -5,6 +5,7 @@ class AppConfig
   def initialize
     @@data_path = "./config/config.yaml"
     load_variables
+    generate_folders_if_not_exists
     select_files
   end
 
@@ -24,5 +25,10 @@ class AppConfig
     .map { |file| file.split(".")[0] }
     @files = usable_files
     usable_files
+  end
+
+  def generate_folders_if_not_exists
+    folders = ["./templates", "./out"]
+    folders.each { |folder| Dir.mkdir(folder) unless File.exists?(folder) }
   end
 end
