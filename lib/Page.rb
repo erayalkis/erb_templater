@@ -6,7 +6,7 @@ class Page
 
   def initialize(file_name)
     @@file_name = file_name
-    @@exts = [".text.erb", ".html.erb", ".rhtml"]
+    @@exts = [".text.erb", ".txt.erb", ".html.erb", ".rhtml"]
     @@path_without_ext = "./templates/#{@@file_name}"
     confirm_file_exists
     get_file_paths
@@ -45,6 +45,7 @@ class Page
   def confirm_file_exists
     paths = get_full_paths
 
+    p paths
     filename_has_match = paths.any? { |path| File.exist?(path) }
     raise "File does not exist" unless filename_has_match
   end
