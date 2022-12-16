@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to <%= @company.name %></title>
+</head>
+<body>
+  <h1>Dear, <%= @company.recruiter %> </h1>
+  <p>My name is <%= @user.name %>, I am a <%= @user.role %> with 32 years of experience.</p>
+  <p>I'd love to become a placeholder guy at <%= @company.name %></p>
+  <p>Please feel free to reach out for any further information.</p>
+  <br />
+  <p>Best regards,</p>
+  <p><%= @user.name %></p>
+  <p><%= @user.number %></p>
+</body>
+</html>
