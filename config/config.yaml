@@ -5,4 +5,5 @@ user:
     number: 111-PLACEHOLDER-222
 company:
   name: "Placeholder Enterprises LTD."
+  recruiter: "Marty McSmartypants"
   role: "Another Placeholder Guy"
