@@ -16,7 +16,7 @@ class AppConfig
   end
 
   def select_files
-    return @generation.use_only if @generation.use_only.length > 0
+    return @files = @generation.use_only if @generation.use_only.length > 0
 
     usable_files =  Dir.entries("./templates")
     .select { |file| File.file? File.join("./templates", file) }

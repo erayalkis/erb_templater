@@ -1,2 +1,2 @@
 generation:
-  use_only: []
+  use_only: ["example_template"]
