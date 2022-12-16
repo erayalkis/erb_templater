@@ -9,8 +9,7 @@ end
 
 def main
   config = UserConfig.new
-
-  page = Page.new("0")
+  page = Page.new("example_template")
   page.generate_files(config.get_binding)
 end
 
