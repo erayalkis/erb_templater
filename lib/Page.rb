@@ -18,7 +18,7 @@ class Page
     @@paths.each do |path| 
       file = File.read(File.expand_path(path))
       template = ERB.new(file)
-      templates << template
+      templates << { path: path, template: template }
     end
 
     templates
@@ -26,8 +26,12 @@ class Page
 
   def generate_files(config_binding)
     raise "Templates not loaded" if @templates.length == 0
-    @templates.each do |template|
-      p template.result(config_binding)
+    @templates.each do |template_obj|
+      output_path = template_obj[:path].gsub('templates', 'out').gsub('.erb', '')
+      result = template_obj[:template].result(config_binding)
+      File.open(output_path, 'w+') do |f|
+        f.write result
+      end
     end
   end
 

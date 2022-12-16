@@ -1,6 +1,8 @@
 user:
   name: "Eray Alkış"
   role: "Full-Stack Software Developer"
+  personal:
+    number: 332594988
 company:
   name: "Company LTD."
   role: "Backend Engineer"
