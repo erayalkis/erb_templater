@@ -1,6 +1,6 @@
 require 'yaml'
 
-YAML_PATH = "./config/config.yaml"
+YAML_PATH = "./config/user_config.yaml"
 
 class UserConfig
   def initialize()

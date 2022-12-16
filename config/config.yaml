@@ -1,14 +1,2 @@
-user:
-  name: "Placeholder Dude"
-  role: "Professional Placeholder"
-  personal:
-    number: 111-PLACEHOLDER-222
-    address:
-      country: "Placeholder Country"
-      city: "Placeholder City"
-      street: "Placeholder Streer"
-      zipcode: 00000
-company:
-  name: "Placeholder Enterprises LTD."
-  recruiter: "Marty McSmartypants"
-  role: "Another Placeholder Guy"
+generation:
+  use_only: ["example_template"]
