@@ -5,7 +5,7 @@ Hi there! This is an app for generating `.txt` and `.html` files using [ERB]("ht
 ## How to use Templatr
 
 **TLDR:**
-The app will step through each template in `/templates`, and generate a file using your config into the `/out` file.
+The app will step through each template in `/templates`, and generate a file using your config into the `/out` folder.
 
 **I wanna read!:**
 ## 1. Config
@@ -20,7 +20,7 @@ This file is for configuring the behaviour of the app, though currently it only 
 -----
 
 ## 2. Templates
-*(In the templates folder, you can find an example template which uses the dummy config, though you can add a additional templates of your own here*)
+*(In the root folder, you can find an example template which uses the dummy config, though you can add a additional templates of your own here*)
 
 In each template, the data you provided in the [user config file](/config/user_config.yml) will be available as an instance variable.
 Meaning, if you have a config like this:
